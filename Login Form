@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css"
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<style>
+    body{
+      
+       display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background:url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJ0c1AhxnviboiEb4LwaxC8JqiSrVQDwKdmpRplqw8aWA4P8DM) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .Border{
+        width: 420px;
+        background:transparent;
+        border: 2px solid white;
+        
+        color: rgb(255, 255, 255);
+        padding: 30px 40px ;
+        border-radius: 15px;
+        backdrop-filter: blur(10px);
+        align:center
+    }
+    .Border h1{
+        font-size: 36px;
+        color: rgb(255, 255, 255);
+        text-align: center;
+
+    }
+    .Border .username{
+        position: relative;
+        
+        width:100%;
+        height: 50px;
+        border: none;
+        margin: 30px 0;
+    }
+    .username input{
+        width: 98%;
+        height: 100%;
+        background: transparent;
+      
+        outline: none;
+        border: 2px solid rgb(255, 255, 255 ) ;
+        border-radius: 40px;
+        font-size: 16px;
+        padding: 20px 45px 20px 2;
+        color: white;
+
+    }
+    .username input::placeholder{
+        color: white;
+        
+    }
+    .username img{
+        position: absolute;
+        right: 20px;
+        top: 30%;
+        transform: translate(-50%);
+    }
+    .Border .input{
+        display: flex;
+        justify-content: space-between;
+        font-size: 15px;
+        margin: -15px 0 15px;
+    }
+    .input label input{
+        accent-color: white;
+        margin-right: 3px;
+    }
+    .input a:hover{
+        text-decoration: underline;
+    }
+    .Border .button{
+        width: 100%;
+        height: 45px;
+        background-color: white;
+        border: none;
+        outline: none;
+        border-radius: 40px;
+        box-shadow: 0 0 10px rgba(0,0,0,.1);
+        font-size: 16px;
+        color: black;
+    }
+    .Border .register{
+        font-size: 15px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+
+   
+</style>
+<body>
+    <div class="Border">
+    <form action="">
+    <h1>Login</h1>
+    
+   
+        <div class="username">
+        <input  type="text" placeholder="Username" required>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAURJREFUSEvF1L8rRXEYx/HXTWaEwSiZLIpVRgulKBaLzWLwa7QopURS/gRZ5FcW/wAlGWQiIykMKKX8OKdc3c69557bOW6+2znn+3zen+fp85ycKp9clfVVCujFIjp+DF1gDsdJBisBjGKTIjOfGMRBOUgSoB43aIgRuUMb3uIgSYDQ4U7CGPpwlBYwjeUEwBRW0wIGsJ8A6MdhWkAdrtEUI3CPdrykBYR1I9gqIRCmaAi7WVKUr+3B0s8efOASszj5iz1I0ij7PSmmmcTD4nKAZswEm9oVzLkTjRHaI85xihU8lHITBxgLBNeDfIcpquQ8YRx70culAJPBr2GtEtUSd4axXfg+CmjFFWpSAl4RavyOKwrYwERK8XzZfGBwIf8QBdyiJSPgDN1xgHfUZgQ8F4Yj2sFXRvEi4/+6aH/STNU7+AYkwS0ZwQsJ3gAAAABJRU5ErkJggg=="/>
+    </div>
+   
+     <div class="username">
+        <input type="password" placeholder="Password" required>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPtJREFUSEvt1TFKQ0EQxvFfvIKkEEEQC229go12NuIdhFTBJtgoplBSWOkdrOwEBa9gkcYuKIRU4g1EDWzAPN7L5L0Q0mSrYWf2++9+zO7WzHnU5qxvWsARTrCXNvSCWzxEG5wG0MFpgdA5LiZBIsAx7pPAJe5S3MBZivfxXASJAK/YRRM3GZEhoI0nHFQFfGPlz+86PjMiaxjgC6tVAT9pYdFJo3zYRZFAlF8M4BBX2Il6PJN/S+38+H8+z9s+1kuKj8p72IoAI18rMsZtzzvBEjDmytKivE5bvEUf2Kh4Cd6xGV204VNxje2SkC5aCJ+KkrqTy6MfbWbYL7s+KRl1wSMtAAAAAElFTkSuQmCC"/>
+    </div>
+    
+    <div class="input">
+    <lable><input type="checkbox">Remember Me</lable>
+    
+        <a href="">Forgot password</a></div>
+    
+    
+    <button type="submit" class="button">Login</button>
+    <div class="register">
+        <p>Dont have an account?<a href="">Register</a></p>
+       </div>
+    </div>
+    </form>
+    </body>
+</html>
